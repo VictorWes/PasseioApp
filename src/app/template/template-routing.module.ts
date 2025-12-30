@@ -6,17 +6,20 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children:[
+    children: [
       {
         path: 'categorias',
-        loadChildren: () => import('../categorias/categorias.module').then(m => m.CategoriasModule) 
-      }
-    ]
-  }
+        loadChildren: () =>
+          import('../categorias/categorias.module').then(
+            (m) => m.CategoriasModule
+          ),
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class TemplateRoutingModule { }
+export class TemplateRoutingModule {}
