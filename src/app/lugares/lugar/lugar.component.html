@@ -16,12 +16,18 @@
         class="w-full p-3 border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
         required
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')">
+        Campo obrigatório
+      </span>
     </div>
 
     <div class="mb-4">
       <label for="categoria" class="block text-gray-600 font-medium mb-2">
         Categoria</label
       >
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')">
+        Campo obrigatório
+      </span>
       <select
         id="categoria"
         name="categoria"
@@ -48,11 +54,14 @@
         class="w-full p-3 border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
         required
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('localizacao')">
+        Campo obrigatório
+      </span>
     </div>
 
     <div class="mb-4">
       <label for="urlFoto" class="block text-gray-600 font-medium mb-2">
-        urlFoto
+        Foto
       </label>
       <input
         type="text"
@@ -63,12 +72,18 @@
         class="w-full p-3 border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
         required
       />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('urlFoto')">
+        Campo obrigatório
+      </span>
     </div>
 
     <div class="mb-4">
       <label for="avaliacao" class="block text-gray-600 font-medium mb-2"
         >Avaliação</label
       >
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')">
+        Campo obrigatório
+      </span>
       <select
         id="avaliacao"
         name="avaliacao"

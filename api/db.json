@@ -20,5 +20,23 @@
       "nome": "TESTE",
       "descricao": "TESTE"
     }
+  ],
+  "lugares": [
+    {
+      "id": "1522",
+      "nome": "Praia do coco",
+      "categoria": "TESTE",
+      "localizacao": "coco",
+      "urlFoto": "coco",
+      "avaliacao": "3"
+    },
+    {
+      "id": "08c2",
+      "nome": "dasdsa",
+      "categoria": "Shoppings",
+      "localizacao": "asdsadas",
+      "urlFoto": "asdas",
+      "avaliacao": "Selecione uma avaliação"
+    }
   ]
 }
