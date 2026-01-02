@@ -4,6 +4,21 @@
       "id": "2",
       "nome": "Shoppings",
       "descrição": "Lugares para fazer compras"
+    },
+    {
+      "id": "c6b6",
+      "nome": "Shopping",
+      "descricao": "teste shoppings"
+    },
+    {
+      "id": "b1d1",
+      "nome": "Shopping",
+      "descricao": "teste shoppings"
+    },
+    {
+      "id": "09c6",
+      "nome": "TESTE",
+      "descricao": "TESTE"
     }
   ]
 }
