@@ -1,48 +1,22 @@
 {
   "categorias": [
     {
-      "id": "2",
-      "nome": "Shoppings",
-      "descrição": "Lugares para fazer compras"
-    },
-    {
-      "id": "c6b6",
-      "nome": "Shopping",
-      "descricao": "teste shoppings"
-    },
-    {
-      "id": "b1d1",
-      "nome": "Shopping",
-      "descricao": "teste shoppings"
-    },
-    {
-      "id": "09c6",
-      "nome": "TESTE",
-      "descricao": "TESTE"
-    },
-    {
       "id": "bf37",
       "nome": "Praias",
       "descricao": "Praias no geral"
+    },
+    {
+      "id": "a103",
+      "nome": "Parques",
+      "descricao": "Parques no geral"
+    },
+    {
+      "id": "73bb",
+      "nome": "Shopping",
+      "descricao": "Todos shoppings fortaleza"
     }
   ],
   "lugares": [
-    {
-      "id": "1522",
-      "nome": "Praia do coco",
-      "categoria": "TESTE",
-      "localizacao": "coco",
-      "urlFoto": "coco",
-      "avaliacao": "3"
-    },
-    {
-      "id": "08c2",
-      "nome": "dasdsa",
-      "categoria": "Shoppings",
-      "localizacao": "asdsadas",
-      "urlFoto": "asdas",
-      "avaliacao": "Selecione uma avaliação"
-    },
     {
       "id": "4d5f",
       "nome": "Jericoacora",
@@ -50,6 +24,30 @@
       "localizacao": "CE",
       "urlFoto": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/14/10/2e/d9/jericoacoara.jpg",
       "avaliacao": "5"
+    },
+    {
+      "id": "a8f1",
+      "nome": "Parque do coco",
+      "categoria": "Parques",
+      "localizacao": "CE",
+      "urlFoto": "https://www.ceara.gov.br/wp-content/uploads/2024/07/IMG_4821-1536x1024-1-1200x800.jpg",
+      "avaliacao": "5"
+    },
+    {
+      "id": "6995",
+      "nome": "North Shopping Joquei",
+      "categoria": "Shopping",
+      "localizacao": "CE",
+      "urlFoto": "https://s3.amazonaws.com/br.com.ancar/ancar-institucional-files/Midia/Shopping/Banner/2022-12/DJI_0433.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "id": "b6b6",
+      "nome": "Praia do Prea",
+      "categoria": "Praias",
+      "localizacao": "CE",
+      "urlFoto": "https://s3.amazonaws.com/br.com.ancar/ancar-institucional-files/Midia/Shopping/Banner/2022-12/DJI_0433.jpg",
+      "avaliacao": "4"
     }
   ]
 }

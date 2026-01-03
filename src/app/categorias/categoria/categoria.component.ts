@@ -36,4 +36,6 @@ export class CategoriaComponent {
     const campo = this.camposForm.get(nomeCampo);
     return campo?.invalid && campo?.touched && campo?.errors?.['required'];
   }
+
+ 
 }
