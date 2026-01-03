@@ -19,6 +19,11 @@
       "id": "09c6",
       "nome": "TESTE",
       "descricao": "TESTE"
+    },
+    {
+      "id": "bf37",
+      "nome": "Praias",
+      "descricao": "Praias no geral"
     }
   ],
   "lugares": [
@@ -37,6 +42,14 @@
       "localizacao": "asdsadas",
       "urlFoto": "asdas",
       "avaliacao": "Selecione uma avaliação"
+    },
+    {
+      "id": "4d5f",
+      "nome": "Jericoacora",
+      "categoria": "Praias",
+      "localizacao": "CE",
+      "urlFoto": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/14/10/2e/d9/jericoacoara.jpg",
+      "avaliacao": "5"
     }
   ]
 }
