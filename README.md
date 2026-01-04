@@ -1,59 +1,94 @@
-# PasseioApp
+# 🚶‍♂️ Passeio App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+Um projeto Angular para listar categorias e lugares (passeios), com uma API fake usando `json-server` para desenvolvimento e testes.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Visão geral
 
-```bash
-ng serve
-```
+**Passeio App** é um app front-end construído em Angular que consome uma API mock (`json-server`) para gerenciar `categorias` e `lugares`. O repositório contém dois arquivos de dados (`api/db.json` e `api/db.production.json`) e scripts NPM para rodar servidor de desenvolvimento e simular um ambiente de produção.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Principais funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Listagem de categorias e lugares
+- Estrutura modular Angular (módulos para categorias, lugares, galeria, etc.)
+- API mock com `json-server` (simula endpoints REST)
+- Ambientes (development / production) via `src/environments`
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧰 Tecnologias
 
-```bash
-ng generate --help
-```
+- Angular 19
+- json-server (para API mock)
+- TailwindCSS (configuração presente)
+- TypeScript
 
-## Building
+---
 
-To build the project run:
+## 🚀 Como rodar localmente
 
-```bash
-ng build
-```
+### Pré-requisitos
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Node.js (14+ recomendado)
+- npm
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Instalação
 
 ```bash
-ng test
+# instale dependências
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Rodando a aplicação (dev)
 
 ```bash
-ng e2e
+# iniciar o front-end (Angular dev server)
+npm run start
+
+# iniciar json-server com dados de desenvolvimento (porta 3000)
+npm run server
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+A API de desenvolvimento usa `api/db.json` e expõe endpoints como:
 
-## Additional Resources
+- http://localhost:3000/categorias
+- http://localhost:3000/lugares
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Simulando produção (json-server)
+
+```bash
+# inicia json-server apontando para o arquivo de produção (porta 4000)
+npm run server:production
+```
+
+> Observação: por padrão `server:production` serve `api/db.production.json` — se esse arquivo tiver recursos diferentes (por exemplo `posts`, `comments`, `profile`) você verá apenas esses endpoints em `:4000`. Se deseja os mesmos recursos do `db.json`, copie/mescle os dados para `db.production.json`.
+
+### Build para produção
+
+```bash
+# build angular em modo production
+npm run build -- --configuration production
+```
+
+---
+
+## 📁 Estrutura relevante
+
+- `src/` — código Angular
+- `src/environments/` — arquivos de ambiente (`environment.ts`, `environment.production.ts`, `environment.development.ts`)
+- `api/db.json` — dados usados no ambiente de desenvolvimento
+- `api/db.production.json` — dados para `server:production` (atenção: pode diferir de `db.json`)
+- `package.json` — scripts úteis
+
+---
+
+## 📝 Scripts principais (exemplos)
+
+- `npm run start` — Angular dev server
+- `npm run build` — build do app
+- `npm run test` — executa testes
+- `npm run server` — json-server (`api/db.json`) na porta 3000
+- `npm run server:production` — json-server (`api/db.production.json`) na porta 4000
