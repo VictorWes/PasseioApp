@@ -1,4 +1,4 @@
-# 🚶‍♂️ Passeio App
+#  ✈ Passeio App
 
 Um projeto Angular para listar categorias e lugares (passeios), com uma API fake usando `json-server` para desenvolvimento e testes.
 
