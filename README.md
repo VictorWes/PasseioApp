@@ -89,6 +89,5 @@ npm run build -- --configuration production
 
 - `npm run start` — Angular dev server
 - `npm run build` — build do app
-- `npm run test` — executa testes
 - `npm run server` — json-server (`api/db.json`) na porta 3000
 - `npm run server:production` — json-server (`api/db.production.json`) na porta 4000
